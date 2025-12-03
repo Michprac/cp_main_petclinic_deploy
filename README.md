@@ -8,16 +8,16 @@ This project is a cloud-deployed version of the [Spring PetClinic Sample Applica
 
 ## Project Components
 
-* **Main Project Page**: [cp_main_petclinik_deployment]()
+* **Main Project Page**: [cp_main_petclinic_deploy](https://github.com/Michprac/cp_main_petclinic_deploy)
   Contains the architecture diagram and project overview.
 
-* **Infrastructure Automation**: [cp_iac_infrastructure_petclinic]()
+* **Infrastructure Automation**: [cp_iac_petclinic](https://github.com/Michprac/cp_iac_petclinic)
   Automates infrastructure setup using Terraform and Ansible with CI/CD integration.
 
-* **Application**: [cp_spring-petclinic]()
+* **Application**: [cp_build_petclinic](https://github.com/Michprac/cp_build_petclinic)
   Implements the Spring PetClinic application with CI/CD pipelines.
 
-* **Monitoring**: [cp_monitoring]()
+* **Monitoring**: [cp_monitoring_petclinic](https://github.com/Michprac/cp_monitoring_petclinic)
   Provides monitoring for both application and infrastructure health.
 
 ## Characteristics
@@ -64,13 +64,13 @@ It can be viewed below:
 ## Steps for Using This Project
 
 1. **Set up infrastructure**
-   Use the [cp_iac_infrastructure](https://github.com/mboguslawsk/cp_iac_infrastructure) repository:
+   Use the [cp_iac_petclinic](https://github.com/Michprac/cp_iac_petclinic) repository:
 
    * Start the pipeline **"IaC Terraform Automation"** manually. This will deploy the required resources and configure them using an Ansible playbook.
    * To destroy the infrastructure, simply approve the **destroy** job.
 
 2. **Develop and deploy the application**
-   Use the [cp_spring-petclinic](https://github.com/mboguslawsk/cp_spring-petclinic) repository:
+   Use the [cp_build_petclinic](https://github.com/Michprac/cp_build_petclinic) repository:
 
    **Option A – Main branch deployment**
 
@@ -94,7 +94,7 @@ It can be viewed below:
 
 ### 3. Monitoring
 
-Use the [cp_monitoring](https://github.com/mboguslawsk/cp_monitoring) repository to set up monitoring dashboards.
+Use the [cp_monitoring_petclinic](https://github.com/Michprac/cp_monitoring_petclinic) repository to set up monitoring dashboards.
 This dashboard provides visibility into various architecture components and metrics within **Google Cloud Monitoring**.
 
 <p align="center">
